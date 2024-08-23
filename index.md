@@ -11,7 +11,7 @@ layout: index
 <h2>Guides</h2>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
     <div class="col">
-        <a class="card" href="{{ site.baseurl }}/guides/install/plucky.html">
+        <a class="card" href="{{ site.baseurl }}/guides/install/plucky">
             <div class="card-header"> Installation </div>
             <div class="card-body">
                 <h5 class="card-title"> Plucky (Pluckeye)</h5>
@@ -21,7 +21,7 @@ layout: index
         </a>
     </div>
     <div class="col">
-        <a class="card" href="{{ site.baseurl }}/guides/install/cold-turkey-blocker.html">
+        <a class="card" href="{{ site.baseurl }}/guides/install/cold-turkey-blocker">
             <div class="card-header"> Installation </div>
             <div class="card-body">
                 <h5 class="card-title">Cold Turkey Blocker </h5>
@@ -31,7 +31,7 @@ layout: index
         </a>
     </div>
     <div class="col">
-        <a class="card" href="{{ site.baseurl }}/guides/bypass-prevention/plucky-lockbox.html">
+        <a class="card" href="{{ site.baseurl }}/guides/bypass-prevention/plucky-lockbox">
             <div class="card-header"> Bypass Prevention </div>
             <div class="card-body">
                 <h5 class="card-title">Plucky (Pluckeye) Lockbox</h5>
@@ -42,6 +42,19 @@ layout: index
     </div>
 </div>
 <br>
-<p>This website is in early development, bookmark it and check back later for more guides.</p>
-
+<h2>Extensions</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+    <div class="col">
+        <a class="card" href="{{ site.baseurl }}/extensions/google-search-web-filter-redirector">
+            <div class="card-body">
+                <h5 class="card-title"> Google Search Web Filter Redirector</h5>
+                <p class="card-text">Redirects Google searches to the Web filter, which contains text-based links to websites.</p>
+            </div>
+            <div class="card-footer"> Chrome</div>
+        </a>
+    </div>
+    
+</div>
+<br>
+<p>This website is in early development, bookmark it and check back later for more content.</p>
 </div>
