@@ -5,7 +5,7 @@ layout: index
 
 <h1 class="text-center">Restrict Any Device </h1>
 <p class="text-center">
-  <strong>Learn how to block access to any content on devices for individuals, spouses, parents, children, and families.  </strong>
+  <strong>Learn how to block access to any content on all devices for families, children, spouses, friends, and individuals. </strong>
 
 </p>
 <h2>Guides</h2>
@@ -45,7 +45,7 @@ layout: index
 <h2>Extensions</h2>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
     <div class="col">
-        <a class="card" href="{{ site.baseurl }}/extensions/google-search-web-filter-redirector">
+        <a class="card" href="https://chromewebstore.google.com/detail/google-search-web-filter/cnailmoibfjlnlnjedbgbjbononifola" target="_blank">
             <div class="card-body">
                 <h5 class="card-title"> Google Search Web Filter Redirector</h5>
                 <p class="card-text">Redirects Google searches to the Web filter, which contains text-based links to websites.</p>

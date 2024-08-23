@@ -1,12 +1,9 @@
 title: Restrict Devices
-description: Documentation and guides for managing device usage.
+description: Learn how to block access to any content on all devices for families, children, spouses, friends, and individuals.
+domain: my-site.github.io
 url: "https://restrictdevices.com"
 baseurl: "" # the subpath of your site, e.g. /blog
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
 exclude:
   - Gemfile
-  - Gemfile.lock
-  - node_modules
+
 
