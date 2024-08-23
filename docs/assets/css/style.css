@@ -1,0 +1,18 @@
+a.card{
+  text-decoration: none;
+}
+
+ul ul {
+  list-style-type: none;
+}
+.card {
+  height: 100%;
+}
+
+body{
+  font-family:Roboto, Arial, sans-serif;
+}
+
+.no-js {
+  visibility: visible !important;
+}

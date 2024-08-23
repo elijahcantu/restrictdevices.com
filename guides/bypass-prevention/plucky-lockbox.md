@@ -1,49 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: guide
+title: "How to Use Plucky (Pluckeye) Lockbox"
+description: "How to use Plucky (Pluckeye) Lockbox."
+keywords: "Plucky, Pluckeye, Plucky Lockbox"
 
-<head>
-  <title>How to Use Plucky (Pluckeye) Lockbox</title>
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
-  <meta name="description" content="How to setup and use Plucky (Pluckeye) Lockbox.">
-  <meta name="keywords" content="Lockbox, Plucky, Pluckeye Lockbox">
-  <meta name="author" content="Restrict Devices">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://restrictdevices.com/">
-  <script src="dark-mode-switch.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/style.css">
-</head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="d-inline-block align-top"
-            viewBox="0 0 512 512">
-            <path
-              d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
-              fill="red" />
-          </svg> Restrict Devices</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+---
+
+
   <div class="container">
     <h1 class="text-center">How to Use Plucky (Pluckeye) Lockbox </h1>
     <ul class="list-unstyled">
@@ -117,14 +81,3 @@
       </div>
     </div>
   </div>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HM5HER0XN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-0HM5HER0XN');
-  </script>
-</body>
-
-</html>

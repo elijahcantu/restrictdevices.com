@@ -12,3 +12,7 @@ ul ul {
 body{
   font-family:Roboto, Arial, sans-serif;
 }
+
+.no-js {
+  visibility: visible !important;
+}
