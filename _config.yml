@@ -1,7 +1,7 @@
 title: Restrict Devices
 description: Documentation and guides for managing device usage.
 url: "https://restrictdevices.com"
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -10,4 +10,3 @@ exclude:
   - Gemfile.lock
   - node_modules
 
-destination: docs
