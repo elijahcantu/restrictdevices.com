@@ -2,6 +2,7 @@ title: Restrict Devices
 description: Learn how to block access to any content on all devices for families, children, spouses, friends, and individuals.
 domain: elijahcantu.github.io
 url: "https://restrictdevices.com"
+theme: null
 baseurl: "" # the subpath of your site, e.g. /blog
 exclude:
   - Gemfile
