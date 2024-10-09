@@ -3,7 +3,7 @@ description: Learn how to block access to any content on all devices for familie
 domain: elijahcantu.github.io
 url: "https://restrictdevices.com"
 theme: null
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" 
 exclude:
   - Gemfile
 
