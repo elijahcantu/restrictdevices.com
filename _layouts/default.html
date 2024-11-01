@@ -1,9 +1,93 @@
 <!DOCTYPE html>
-<html lang="en"> {% include head.html %}
+<html lang='{{ site.lang | default: "en-US" }}'>
 
-<body style="visibility: hidden;" class="no-js">
-  <script> document.querySelector('body').classList.remove('no-js'); </script> {% include header.html %} {{ content }}
-  {% include google-analytics.html %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> {%- if site.favicon %}
+  <link rel="icon" href="{{ site.favicon}}"> {%- endif %}
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+   <script>
+            window.PrimerSpecConfig = {
+                pdfPath: null, // @managed by build-primer-spec-action
+                siteQualifiedBaseUrl: '{{ site.url }}{{ site.baseurl }}/',
+                hideSidebarOnLoad: {{ page.hideSidebarOnLoad | default: false }},
+                disableSidebar: {{ page.disableSidebar | default: false }},
+                defaultSubthemeName: '{{ site.primerSpec.defaultSubthemeName | default: "default" }}',
+                defaultSubthemeMode: '{{ site.primerSpec.defaultSubthemeMode | default: "system" }}',
+                sitemapEnabled: {% if site.primerSpec.sitemap %}true{% else %}false{% endif %},
+                sitemapUrls: [
+                    {%- if page.excludeFromSitemap -%}
+                    {%- elsif site.primerSpec.sitemap or jekyll.environment == "dev" or jekyll.environment == "site-preview" %}
+                    {%- for sitePage in site.pages -%}
+                    {%- if sitePage.excludeFromSitemap -%}
+                    {%- continue -%}
+                    {%- else -%}
+                    {
+                        url: '{{ sitePage.url | relative_url }}',
+                        path: '{{ sitePage.path }}',
+                        {%- if sitePage.title -%}
+                        title: '{{ sitePage.title }}',
+                        {%- endif -%}
+                        {%- if sitePage.sitemapOrder -%}
+                        sitemapOrder: {{ sitePage.sitemapOrder }},
+                        {%- endif -%}
+                        {% if sitePage.path == page.path -%}
+                        current: true,
+                        {%- endif %}
+                    },
+                    {%- endif -%}
+                    {%- endfor -%}
+                    {%- for sitePage in site.primerSpec.sitemap.externalLinks -%}
+                    {
+                        url: '{{ sitePage.url }}',
+                        title: '{{ sitePage.title }}',
+                        external: true,
+                    },
+                    {%- endfor -%}
+                    {%- endif -%}
+                ],
+                {% unless site.primerSpec.sitemap.label %}
+                sitemapLabel: undefined,
+                {% elsif site.primerSpec.sitemap.label == '' %}
+                sitemapLabel: null,
+                {% else %}
+                sitemapLabel: '{{ site.primerSpec.sitemap.label }}',
+                {% endunless -%}
+                sitemapSiteTitle: '{{ site.title | default: "" }}',
+                {% assign useLegacyCodeBlocks = page.useLegacyCodeBlocks %}
+                {%- if useLegacyCodeBlocks == nil -%}
+                {%- assign useLegacyCodeBlocks = site.primerSpec.useLegacyCodeBlocks -%}
+                {%- endif %}
+                useLegacyCodeBlocks: {{ useLegacyCodeBlocks | default: false }},
+                {% assign defaultCodeblockVariant = page.defaultCodeblockVariant %}
+                {%- if defaultCodeblockVariant == nil -%}
+                {%- assign defaultCodeblockVariant = site.primerSpec.defaultCodeblockVariant -%}
+                {%- endif -%}
+                defaultCodeblockVariant: "{{ defaultCodeblockVariant | default: 'enhanced' }}",
+                disableJokes: {{ site.primerSpec.disableJokes | default: false }}
+            };
+        </script>
+  <script src="{{ base_url }}/assets/v1.10/js/primer_spec_plugin.min.js" crossorigin="anonymous"
+    defer></script>
+    <link rel="stylesheet" href="{{ base_url }}/assets/css/home.css">
+
+</head>
+
+<body>
+  <div id="primer-spec-app-container" onclick="return true;"></div>
+  <div id="primer-spec-plugin-main-content"> {{ content }} </div> 
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script> 
+  {% endif %}
 </body>
 
 </html>

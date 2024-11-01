@@ -1,0 +1,64 @@
+
+/* Class for the page images */
+.page, .notification {
+  width: 100% !important;
+}
+
+
+/* Default mobile styles */
+.installer, .password, .settings, .popup {
+  width: 100% !important; /* Default for installer and settings */
+}
+
+/* Tablet styles */
+@media (min-width: 769px) {
+  .installer {
+      width: 75% !important;
+  }
+
+  
+  .password, .notification {
+      width: 50% !important;
+  }
+
+  .settings {
+      width: 75% !important;
+  }
+
+  .popup {
+      width: 50% !important;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+
+  .password {
+      width: 25% !important;
+  }
+
+  .settings {
+      width: 50% !important;
+  }
+
+  .popup,  .notification  {
+      width: 25% !important;
+  }
+  .page {
+    width: 75% !important;
+  }
+  .installer {
+    width: 50% !important;
+}
+.iphone{
+  width:40% !important;
+}
+  
+}
+
+/* Additional styling if needed */
+body {
+  font-family: Arial, sans-serif !important; /* Set a default font */
+  line-height: 1.6 !important; /* Improve readability */
+  padding: 20px !important; /* Add some padding */
+}

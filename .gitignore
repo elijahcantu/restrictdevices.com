@@ -1,3 +1,21 @@
-Gemfile.lock
+# Ignore the generated `_site/` folder
+_site/
+  
+# Ignore Jekyll cache files
+.jekyll-cache/
+.sass-cache/
 .jekyll-metadata
-_site/assets/css/style.css
+
+# Ignore configuration files created by Bundler
+.bundle/
+
+# Ignore temporary files and backup files
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Ignore any files specific to your editor (example for VS Code)
+.vscode/
+.idea/

@@ -1,63 +1,127 @@
---- 
-layout: default 
+---
+layout: default
 title: Restrict Any Device
-description: Block any content on any device. 
---- 
-<div class="container">
-  <h1 class="text-center">Restrict Any Device </h1>
-  <p class="text-center">
-    <strong>Learn how to block any content on any device for families, children, spouses, friends, and individuals.
-    </strong>
-  </p>
-  <h2>Guides</h2>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
-    <div class="col">
-      <a class="card" href="{{ site.baseurl }}/guides/install/plucky">
-        <div class="card-header"> Installation </div>
-        <div class="card-body">
-          <h5 class="card-title"> Plucky (Pluckeye)</h5>
-          <p class="card-text">Internet filter to bolster self-control.</p>
+description: Block any content on any device.
+---
+
+<div class="ui text container">
+  <h1>Block Any Content on Any Device</h1>
+  <p>Learn how to restrict devices for yourself or others.</p>
+  <h2 id="iOS+iPadOS"><i class="alternate mobile icon"></i>iOS<i class="alternate tablet icon"></i>iPadOS</h2>
+  <div class="ui three stackable cards" style="margin-top:14px;">
+    <a class="ui raised card" href="/apple/screen-time.html">
+      <div class="content">
+        <div class="header">
+          Screen Time
         </div>
-        <div class="card-footer"> Windows, Mac, Linux </div>
-      </a>
-    </div>
-    <div class="col">
-      <a class="card" href="{{ site.baseurl }}/guides/install/cold-turkey-blocker">
-        <div class="card-header"> Installation </div>
-        <div class="card-body">
-          <h5 class="card-title">Cold Turkey Blocker </h5>
-          <p class="card-text">Website and application blocker.</p>
+        <div class="description">
+          Parental controls
         </div>
-        <div class="card-footer"> Windows, Mac </div>
-      </a>
-    </div>
-    <div class="col">
-      <a class="card" href="{{ site.baseurl }}/guides/bypass-prevention/plucky-lockbox">
-        <div class="card-header"> Bypass Prevention </div>
-        <div class="card-body">
-          <h5 class="card-title">Plucky (Pluckeye) Lockbox</h5>
-          <p class="card-text">Delay based text storage.</p>
-        </div>
-        <div class="card-footer"> All (accessible via web browser)</div>
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
-  <br>
-  <h2>Extensions</h2>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
-    <div class="col">
-      <a class="card"
-        href="https://chromewebstore.google.com/detail/google-search-web-filter/cnailmoibfjlnlnjedbgbjbononifola"
-        target="_blank">
-        <div class="card-body">
-          <h5 class="card-title"> Google Search Web Filter Redirector</h5>
-          <p class="card-text">Redirects Google searches to the Web filter, which contains text-based links to websites.
-          </p>
+  <h2 id="macOS"><i class="laptop icon"></i>macOS</h2>
+  <div class="ui three stackable cards">
+    <a class="ui raised card" href="/macOS/plucky.html">
+      <div class="content">
+        <div class="header">
+          Plucky
         </div>
-        <div class="card-footer"> Chrome</div>
-      </a>
-    </div>
+        <div class="description">
+          Delay-based filter
+        </div>
+      </div>
+    </a>
+    <a class="ui raised card" href="/macOS/cold-turkey.html">
+      <div class="content">
+        <div class="header">
+          Cold Turkey
+        </div>
+        <div class="description">
+          Site + app blocker
+        </div>
+      </div>
+    </a>
   </div>
-  <br>
-  <p>This website is in early development, bookmark it and check back later for more content.</p>
+  <h2 id="Windows"><i class="windows icon"></i>Windows</h2>
+  <div class="ui three stackable cards">
+    <a class="ui raised card" target="_blank" href="https://pluckyfilter.com/">
+      <div class="right aligned floating ui primary label ">Tutorials Coming Soon
+      </div>
+      <div class="content">
+        <div class="header">
+          Plucky
+        </div>
+        <div class="description">
+          Delay-based filter
+        </div>
+      </div>
+    </a>
+    <a class="ui raised card" target="_blank" href="https://getcoldturkey.com/">
+      <div class="right aligned floating ui primary label ">Tutorials Coming Soon</div>
+      <div class="content">
+        <div class="header">
+          Cold Turkey
+        </div>
+        <div class="description">
+          Site + app blocker
+        </div>
+      </div>
+    </a>
+  </div>
+  <h2 id="Android"><i class="android icon"></i>Android</h2>
+  <div class="ui three stackable cards">
+    <a class="ui raised card" target="_blank" href="https://getplucky.net/andoff">
+      <div class="right aligned floating ui primary label">
+        Tutorials Coming Soon
+      </div>
+      <div class="content">
+        <div class="header">
+          Andoff
+        </div>
+        <div class="description">
+          Delay-based device manager
+        </div>
+      </div>
+    </a>
+  </div>
+  <h2 id="OtherTools">
+    <i class="tools icon"></i>Other Tools
+  </h2>
+  <div class="ui three stackable cards">
+    <a class="ui raised card" target="_blank" href="https://lockbox.pluckeye.net/">
+      <div class="content">
+        <div class="header">
+          Plucky Lockbox
+        </div>
+        <div class="description">
+          Delay-based text storage
+        </div>
+      </div>
+    </a>
+    <div class="ui card">
+      <div class="content">
+        <div class="header">
+          Google Search Web Filter </div>
+        <div class="description">
+          Text-based search results <a target="_blank"
+            href="https://chromewebstore.google.com/detail/google-search-web-filter/cnailmoibfjlnlnjedbgbjbononifola">
+            <i class="chrome icon"></i>Chrome
+          </a> <a target="_blank" href="https://addons.mozilla.org/firefox/addon/google-search-web-filter/">
+            <i class="firefox browser icon"></i>Firefox
+          </a> </div>
+      </div>
+    </div>
+    <a class="ui raised card" target="_blank"
+      href="https://chromewebstore.google.com/detail/grayscaler/lobmgclijfljeodngchmpeafnodanohb">
+      <div class="content">
+        <div class="header">
+          Grayscaler
+        </div>
+        <div class="description">
+          Grayscale websites
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
